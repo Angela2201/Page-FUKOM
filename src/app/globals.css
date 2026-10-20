@@ -67,6 +67,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-quicksand);
+  --font-heading: var(--font-junegull), var(--font-quicksand);
 }
 
 body {
