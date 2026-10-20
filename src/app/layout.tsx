@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import BotonWhatsapp from "@/components/ui/BotonWhatsapp";
 
 const quicksand = Quicksand({
   variable: "--font-quicksand",
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Header />
         {children}
         <Footer />
+        <BotonWhatsapp />
       </body>
     </html>
   );

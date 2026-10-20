@@ -4,6 +4,7 @@ export const contacto = {
   telefono: "(601) 000 0000",
   direccion: "Calle 00 # 00-00, Los Alpes, Ciudad Bolívar, Bogotá",
   nit: "000.000.000-0",
+  whatsapp: "#",
 };
 
 export const redes = [

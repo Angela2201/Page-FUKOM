@@ -9,7 +9,7 @@ const subrayado =
 
 export default function Footer() {
   return (
-    <div className="mt-auto">
+    <div className="relative mt-auto">
       <TiraOndulada />
       <footer className="bg-primary p-12">
         <div className="mx-auto flex max-w-[1344px] flex-col gap-7 rounded-24 bg-white px-12 pb-7 pt-10">
