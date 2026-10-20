@@ -68,3 +68,15 @@ export const columnasMenu: SeccionMenu[][] = [
     },
   ],
 ];
+
+const buscarSeccion = (titulo: string) =>
+  columnasMenu.flat().find((seccion) => seccion.titulo === titulo)!;
+
+export const columnasFooter: SeccionMenu[][] = [
+  [buscarSeccion("Quiénes somos"), buscarSeccion("Únete")],
+  [
+    buscarSeccion("Qué hacemos"),
+    buscarSeccion("InspirARTE FUKOM"),
+    buscarSeccion("Blog"),
+  ],
+];
