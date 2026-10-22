@@ -1,2 +1,4 @@
-{"timestamp":"00:00:01.999","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:08.545","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:00:02.145","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:06.073","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:00:06.512","source":"Browser","level":"WARN","message":"Image with src \"/images/personajes/luna.png\" was detected as the Largest Contentful Paint (LCP). Please add the `loading=\"eager\"` property if this image is above the fold.\nRead more: https://nextjs.org/docs/app/api-reference/components/image#loading"}
+{"timestamp":"00:00:06.571","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mImage with src \\\"/images/personajes/luna.png\\\" was detected as the Largest Contentful Paint (LCP). Please add the `loading=\\\"eager\\\"` property if this image is above the fold.\\nRead more: https://nextjs.org/docs/app/api-reference/components/image#loading\\u001b[39m\""}
