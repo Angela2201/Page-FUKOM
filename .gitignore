@@ -40,3 +40,16 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 node_modules
+
+# nextjs
+.next/
+/out/
+/build/
+/coverage/
+/dist/
+/dist-ssr/
+/public/
+/public-ssr/
+/public-ssr-dev/
+/public-ssr-dev-ssr/
+/public-ssr-dev-ssr-dev/

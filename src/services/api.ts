@@ -16,6 +16,21 @@ export const api = axios.create({
   timeout: 10000,
 });
 
+
+// Interceptores de salida para las peticiones SSR:
+api.interceptors.request.use(
+  (config) => {
+      console.log('Peticion SSR a', config.url);
+      return config;
+  },
+  (error) => {
+      console.error('Error en la peticion SSR: ', error);
+      return Promise.reject(error);
+  }
+);
+
+
+// Interceptores de entrada para las respuestas SSR:
 api.interceptors.response.use(
   (response) => response,
   (error: AxiosError<{ message?: string }>) => {
