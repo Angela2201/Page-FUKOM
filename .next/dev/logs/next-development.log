@@ -1,9 +1,2 @@
-{"timestamp":"00:00:03.238","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:14.676","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:00:14.896","source":"Server","level":"WARN","message":"⚠ The requested resource \"/images/personajes/maya.png\" is an animated image so it will not be optimized. Consider adding the \"unoptimized\" property to the <Image>."}
-{"timestamp":"00:00:14.933","source":"Server","level":"WARN","message":"⚠ The requested resource \"/images/personajes/leo.png\" is an animated image so it will not be optimized. Consider adding the \"unoptimized\" property to the <Image>."}
-{"timestamp":"00:00:14.949","source":"Server","level":"WARN","message":"⚠ The requested resource \"/images/personajes/luna.png\" is an animated image so it will not be optimized. Consider adding the \"unoptimized\" property to the <Image>."}
-{"timestamp":"00:00:14.969","source":"Server","level":"WARN","message":"⚠ The requested resource \"/images/personajes/santi.png\" is an animated image so it will not be optimized. Consider adding the \"unoptimized\" property to the <Image>."}
-{"timestamp":"00:00:58.933","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:04:01.969","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:07:38.289","source":"Server","level":"LOG","message":"✓ Compiled in 270ms"}
+{"timestamp":"00:00:01.999","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:08.545","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
