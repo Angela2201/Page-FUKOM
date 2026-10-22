@@ -8,7 +8,7 @@ export default function BotonWhatsapp() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Escríbenos por WhatsApp"
-      className="fixed bottom-[43px] right-[43px] z-30 size-[62px]"
+      className="fixed bottom-[43px] right-[10px] z-30 size-[62px]"
     >
       <Image src="/icons/whatsapp-fondo.svg" alt="" width={62} height={62} />
       <Image
