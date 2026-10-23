@@ -4,6 +4,7 @@ import DesigualdadEducativa from "@/features/home/DesigualdadEducativa";
 import FraseDestacada from "@/features/home/FraseDestacada";
 import ImpactoTerritorio from "@/features/home/ImpactoTerritorio";
 import Metodologia from "@/features/home/Metodologia";
+import Programas from "@/features/home/Programas";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <FraseDestacada />
       <ImpactoTerritorio />
       <Metodologia />
+      <Programas />
     </main>
   );
 }
