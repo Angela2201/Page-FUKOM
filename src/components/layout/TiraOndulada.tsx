@@ -7,7 +7,7 @@ export default function TiraOndulada() {
   return (
     <svg
       viewBox="0 0 1440 138.66"
-      className="block h-auto w-full"
+      className="block h-auto w-full bg-[var(--fondo-tira,transparent)]"
       aria-hidden="true"
     >
       {/* Ola azul */}

@@ -6,6 +6,7 @@ import ImpactoTerritorio from "@/features/home/ImpactoTerritorio";
 import Metodologia from "@/features/home/Metodologia";
 import Programas from "@/features/home/Programas";
 import LlamadosAccion from "@/features/home/LlamadosAccion";
+import LlamadoFinal from "@/features/home/LlamadoFinal";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Metodologia />
       <Programas />
       <LlamadosAccion />
+      <LlamadoFinal />
     </main>
   );
 }

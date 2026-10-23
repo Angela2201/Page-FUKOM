@@ -51,18 +51,18 @@ export default function CarruselProgramas() {
                         <Image
                             src="/icons/chevron.svg"
                             alt="Foto anterior"
-                            width={6}
-                            height={10}
-                            className="-mx-px -my-px rotate-180"
+                            width={10}
+                            height={16}
+                            className="-mx-[3px] -my-1 rotate-180"
                         />
                     </Button>
                     <Button variant="secundario" onClick={siguiente}>
                         <Image
                             src="/icons/chevron.svg"
                             alt="Foto siguiente"
-                            width={6}
-                            height={10}
-                            className="-mx-px -my-px"
+                            width={10}
+                            height={16}
+                            className="-mx-[3px] -my-1"
                         />
                     </Button>
                 </div>
