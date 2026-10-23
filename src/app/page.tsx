@@ -3,6 +3,7 @@ import CarruselProgramas from "@/features/home/CarruselProgramas";
 import DesigualdadEducativa from "@/features/home/DesigualdadEducativa";
 import FraseDestacada from "@/features/home/FraseDestacada";
 import ImpactoTerritorio from "@/features/home/ImpactoTerritorio";
+import Metodologia from "@/features/home/Metodologia";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <DesigualdadEducativa />
       <FraseDestacada />
       <ImpactoTerritorio />
+      <Metodologia />
     </main>
   );
 }

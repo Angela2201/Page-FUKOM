@@ -12,8 +12,10 @@ const quicksand = Quicksand({
 });
 
 const junegull = localFont({
-  src: "./fonts/Junegull-ExtraBold.otf",
-  weight: "800",
+  src: [
+    { path: "./fonts/Junegull-Regular.otf", weight: "400", style: "normal" },
+    { path: "./fonts/Junegull-ExtraBold.otf", weight: "800", style: "normal" },
+  ],
   variable: "--font-junegull",
 });
 
