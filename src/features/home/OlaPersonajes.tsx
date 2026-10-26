@@ -18,6 +18,7 @@ export default function OlaPersonajes() {
         alt=""
         width={1440}
         height={127.5}
+        priority
         className="absolute bottom-0 left-0 h-auto w-full"
       />
       {personajes.map(({ src, x, y, w, h }) => (
@@ -27,6 +28,7 @@ export default function OlaPersonajes() {
           alt=""
           width={w}
           height={h}
+          priority
           className="absolute object-cover"
           style={{
             left: `${(x / ANCHO) * 100}%`,
