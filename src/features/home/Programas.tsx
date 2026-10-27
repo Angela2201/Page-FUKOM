@@ -1,0 +1,74 @@
+import Image from "next/image";
+import Link from "next/link";
+import { programas } from "@/data/programas";
+
+export default function Programas() {
+    return (
+        <section>
+            <Image
+                src="/images/onda-programas.svg"
+                alt=""
+                width={1440}
+                height={60}
+                className="block h-auto w-full rotate-180"
+            />
+
+            <div className="flex flex-col gap-10 bg-yellow-alpha-10 px-10 pb-20 pt-10">
+                <div className="flex flex-col gap-3">
+                    <p className="text-2xl/8 font-medium text-neutral-800">Programas socioeducativos</p>
+                    <h2 className="font-heading text-[56px]/16 font-extrabold text-neutral-1000">
+                        Una Apuesta integral por la transformación
+                    </h2>
+                </div>
+
+                <div className="grid grid-cols-2 gap-5">
+                    {programas.map(({ titulo, descripcion, destacado, href }) => (
+                        <article key={titulo} className="flex items-start gap-8 rounded-24 bg-white p-6">
+                            <div className="size-44 shrink-0 overflow-clip rounded-24 bg-white p-3 shadow-[0px_1px_6px_1px_rgba(0,0,0,0.12),0px_0px_0px_1px_rgba(0,0,0,0.08)]">
+                                <div className="relative size-full overflow-clip rounded-16">
+                                    <Image
+                                        src="/images/programas/placeholder.png"
+                                        alt=""
+                                        fill
+                                        sizes="152px"
+                                        className="object-cover"
+                                    />
+                                </div>
+                            </div>
+
+                            <div className="flex flex-1 flex-col gap-5 text-neutral-1000">
+                                <div className="flex items-center gap-3">
+                                    <h3 className="flex-1 text-[28px]/9 font-semibold">{titulo}</h3>
+                                    {destacado && (
+                                        <Image src="/icons/insignia.svg" alt="" width={27} height={32} />
+                                    )}
+                                </div>
+                                <p className="text-xl/6 font-medium">{descripcion}</p>
+                                <Link
+                                    href={href}
+                                    className="flex w-fit items-center gap-3 rounded-12 px-3 py-1 text-base/5 font-medium underline"
+                                >
+                                    Conoce el programa
+                                    <Image src="/icons/chevron.svg" alt="" width={6} height={10} className="-mx-px" />
+                                </Link>
+                            </div>
+                        </article>
+                    ))}
+                </div>
+            </div>
+
+            <div className="relative flex items-end bg-secondary px-[140px] py-5">
+                <p className="flex-1 text-[40px]/[50px] font-bold text-white">
+                    Leo te invita a conocer nuestros programas
+                </p>
+                <Image
+                    src="/images/leo-invita.svg"
+                    alt=""
+                    width={95}
+                    height={132}
+                    className="absolute left-[39.5px] top-[-41.5px]"
+                />
+            </div>
+        </section>
+    );
+}
