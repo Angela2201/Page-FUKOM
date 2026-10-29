@@ -10,7 +10,7 @@ import LlamadoFinal from "@/features/home/LlamadoFinal";
 
 export default function Home() {
   return (
-    <main>
+    <main className="flex flex-col gap-16">
       <div>
         <Hero />
         <CarruselProgramas />

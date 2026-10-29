@@ -3,11 +3,13 @@
 import { useState } from "react";
 import Image from "next/image";
 import Button from "@/components/ui/Button";
-import { fotosCarrusel } from "@/data/carrusel";
+import { home } from "@/content/home";
+
+const { fotos } = home.carrusel;
 
 export default function CarruselProgramas() {
     const [indice, setIndice] = useState(0);
-    const total = fotosCarrusel.length;
+    const total = fotos.length;
 
     const anterior = () => setIndice((i) => (i - 1 + total) % total);
     const siguiente = () => setIndice((i) => (i + 1) % total);
@@ -19,7 +21,7 @@ export default function CarruselProgramas() {
                     className="flex h-full gap-10 transition-transform duration-500 ease-in-out"
                     style={{ transform: `translateX(calc(${-indice} * (100% + 40px)))` }}
                 >
-                    {fotosCarrusel.map((foto) => (
+                    {fotos.map((foto) => (
                         <div
                             key={foto.src}
                             className="relative h-full w-full shrink-0 overflow-clip rounded-24 shadow-[0px_1px_6px_1px_rgba(0,0,0,0.12),0px_0px_0px_1px_rgba(0,0,0,0.08)]"
@@ -38,7 +40,7 @@ export default function CarruselProgramas() {
                 <div className="absolute inset-x-6 bottom-6 flex items-start gap-2.5">
                     <div className="flex flex-1">
                         <div className="flex items-center gap-2.5 p-2">
-                            {fotosCarrusel.map((foto, i) =>
+                            {fotos.map((foto, i) =>
                                 i === indice ? (
                                     <Image key={foto.src} src="/icons/punto-activo.svg" alt="" width={16} height={16} />
                                 ) : (

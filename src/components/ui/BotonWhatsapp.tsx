@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { contacto } from "@/data/contacto";
+import { contacto } from "@/content/contacto";
 
 export default function BotonWhatsapp() {
   return (

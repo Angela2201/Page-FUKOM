@@ -1,5 +1,8 @@
 import Image from "next/image";
 import Button from "@/components/ui/Button";
+import { home } from "@/content/home";
+
+const { titulo, descripcion, accion } = home.impacto;
 
 // Capas del mapa, con las medidas de Figma dentro de un lienzo de 499 x 800
 const capasMapa = [
@@ -18,15 +21,14 @@ export default function ImpactoTerritorio() {
             <div className="flex flex-[684] flex-col items-start gap-5 p-8">
                 <div className="flex flex-col gap-5">
                     <h2 className="font-heading text-[56px]/16 font-extrabold text-neutral-1000">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        {titulo}
                     </h2>
                     <p className="text-[28px]/9 font-medium text-[#858585]">
-                        lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
-                        lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+                        {descripcion}
                     </p>
                 </div>
-                <Button variant="secundario" href="#">
-                    Conoce nuestros proyectos
+                <Button variant="secundario" href={accion.href}>
+                    {accion.texto}
                     <Image src="/icons/chevron.svg" alt="" width={6} height={10} className="-mr-px ml-px" />
                 </Button>
             </div>

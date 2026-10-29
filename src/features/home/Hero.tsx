@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Button from "@/components/ui/Button";
 import OlaPersonajes from "./OlaPersonajes";
+import { home } from "@/content/home";
+
+const { saludo, titulo, descripcion, acciones } = home.hero;
 
 export default function Hero() {
   return (
@@ -8,11 +11,11 @@ export default function Hero() {
       <div className="flex flex-col items-center gap-10">
         <div className="flex flex-col items-center gap-5 text-center">
           <p className="whitespace-pre-wrap text-2xl/8 font-semibold text-neutral-800">
-            ¡HOLA! SOMOS MAYA, SANTI, LUNA Y  LEO.
+            {saludo}
           </p>
 
           <h1 className="font-heading text-[56px]/16 font-extrabold text-neutral-1000">
-            ¡BIENVENID
+            {titulo.antesDelCorazon}
             <Image
               src="/icons/corazon-titulo.svg"
               alt="O"
@@ -20,30 +23,40 @@ export default function Hero() {
               height={40}
               className="inline-block -translate-y-1.5 align-middle"
             />
-            S a la
+            {titulo.despuesDelCorazon}
             <br />
-            <span className="text-secondary">Fundación Kids de Oruga a Mariposa!</span>
+            <span className="text-secondary">{titulo.resaltado}</span>
           </h1>
 
           <p className="text-2xl/8 font-medium text-neutral-800">
-            Un espacio donde acompañamos a niños, niñas, jóvenes y familias a transformar sus
-            <br />
-            vidas a través de experiencias educativas que potencian su desarrollo integral.
+            {descripcion}
           </p>
         </div>
 
         <div className="flex items-start justify-center gap-3">
-          <Button variant="secundario" href="#">
-            Cómo lo hacemos posible
-            <Image src="/icons/chevron.svg" alt="" width={6} height={10} className="-mr-px ml-px" />
-          </Button>
-          <Button
-            variant="principal"
-            href="/donaciones"
-            icon={<Image src="/icons/corazon.svg" alt="" width={17} height={16} />}
-          >
-            Donar
-          </Button>
+          {acciones.map((accion) => (
+            <Button
+              key={accion.texto}
+              variant={accion.variante}
+              href={accion.href}
+              icon={
+                accion.variante === "principal" ? (
+                  <Image src="/icons/corazon.svg" alt="" width={17} height={16} />
+                ) : undefined
+              }
+            >
+              {accion.texto}
+              {accion.variante === "secundario" && (
+                <Image
+                  src="/icons/chevron.svg"
+                  alt=""
+                  width={6}
+                  height={10}
+                  className="-mr-px ml-px"
+                />
+              )}
+            </Button>
+          ))}
         </div>
       </div>
 

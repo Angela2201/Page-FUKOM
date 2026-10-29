@@ -1,5 +1,8 @@
 import Image from "next/image";
 import Button from "@/components/ui/Button";
+import { home } from "@/content/home";
+
+const { texto, accion } = home.frase;
 
 export default function FraseDestacada() {
     return (
@@ -11,11 +14,11 @@ export default function FraseDestacada() {
                             ”
                         </p>
                         <p className="text-[40px]/[50px] font-bold">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+                            {texto}
                         </p>
                     </div>
-                    <Button variant="secundario" href="#">
-                        Conoce cómo lo hacemos
+                    <Button variant="secundario" href={accion.href}>
+                        {accion.texto}
                         <Image src="/icons/chevron.svg" alt="" width={6} height={10} className="-mr-px ml-px" />
                     </Button>
                 </div>

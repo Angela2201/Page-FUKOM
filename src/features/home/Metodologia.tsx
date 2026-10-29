@@ -1,5 +1,7 @@
 import Image from "next/image";
-import { etapasMetodologia } from "@/data/metodologia";
+import { home } from "@/content/home";
+
+const { contexto, titulo, descripcion, etapas } = home.metodologia;
 
 const ANCHO = 1360;
 const ALTO = 156;
@@ -24,13 +26,15 @@ export default function Metodologia() {
         <section className="flex flex-col gap-10 p-10">
             <div className="flex flex-col gap-5">
                 <div className="flex flex-col gap-3">
-                    <p className="text-2xl/8 font-medium text-neutral-800">Nuestra metodología</p>
+                    <p className="text-2xl/8 font-medium text-neutral-800">
+                        {contexto}
+                    </p>
                     <h2 className="font-heading text-[56px]/16 font-extrabold text-neutral-1000">
-                        De oruga a mariposa
+                        {titulo}
                     </h2>
                 </div>
                 <p className="text-[28px]/9 font-medium text-[#858585]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, in alias illo suscipit vero magni ea autem exercitationem. Nostrum inventore possimus facilis commodi tenetur reprehenderit quam porro labore ipsa dignissimos!
+                    {descripcion}
                 </p>
             </div>
 
@@ -53,8 +57,8 @@ export default function Metodologia() {
                 ))}
             </div>
 
-            <div className="flex items-center gap-10">
-                {etapasMetodologia.map(({ etapa, categoria, titulo, descripcion }, i) => (
+            {<div className="flex items-center gap-10">
+                {etapas.map(({ etapa, categoria, titulo, descripcion }, i) => (
                     <article
                         key={etapa}
                         className={`flex flex-1 overflow-clip rounded-24 bg-white shadow-[0px_1px_6px_1px_rgba(0,0,0,0.12),0px_0px_0px_1px_rgba(0,0,0,0.08)] ${i === 0 ? "self-stretch" : ""
@@ -74,7 +78,7 @@ export default function Metodologia() {
                         </div>
                     </article>
                 ))}
-            </div>
+            </div>}
         </section>
     );
 }

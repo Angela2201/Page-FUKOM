@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { columnasMenu } from "@/data/navegacion";
+import { columnasMenu } from "@/content/navegacion";
 
 type MenuNavegacionProps = {
   alNavegar: () => void;

@@ -1,5 +1,8 @@
 import Image from "next/image";
 import Button from "@/components/ui/Button";
+import { home } from "@/content/home";
+
+const { titulo, accion } = home.final;
 
 export default function LlamadoFinal() {
     return (
@@ -14,14 +17,14 @@ export default function LlamadoFinal() {
                 />
                 <div className="relative flex flex-col items-start gap-5">
                     <h2 className="font-heading text-[72px]/[86px] font-extrabold text-neutral-1000">
-                        Haz parte del progreso
+                        {titulo}
                     </h2>
                     <Button
                         variant="principal"
-                        href="/donaciones"
+                        href={accion.href}
                         icon={<Image src="/icons/corazon.svg" alt="" width={17} height={16} />}
                     >
-                        Donar
+                        {accion.texto}
                     </Button>
                 </div>
             </div>

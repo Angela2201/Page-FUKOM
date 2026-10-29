@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { columnasFooter } from "@/data/navegacion";
-import { contacto, enlacesLegales, redes } from "@/data/contacto";
+import { columnasFooter } from "@/content/navegacion";
+import { contacto, enlacesLegales, redes } from "@/content/contacto";
 import TiraOndulada from "./TiraOndulada";
 
 const subrayado =
