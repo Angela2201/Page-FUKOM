@@ -35,6 +35,37 @@ export const home = {
         descripcion:
             "Acompañamos a niños, niñas, jóvenes y sus familias en el municipio de Soacha y en el sector Los Alpes, en la localidad de Ciudad Bolívar, Bogotá. Contamos con una formación integral que vincula a los padres y familias: esto nutre sus pautas de crianza, principios de administración, convivencia y prevención.",
         accion: { texto: "Conoce nuestros proyectos", href: "#", variante: "secundario" },
+        zonas: [
+            {
+                id: "soacha",
+                titulo: "Nuestra trayectoria en Soacha",
+                etiquetaAccesible: "Ver cifras de Soacha",
+                cifras: [
+                    {
+                        valor: "+1.200",
+                        descripcion: "niños, jóvenes y familias beneficiados con nuestros servicios",
+                    },
+                    {
+                        valor: "+800",
+                        descripcion:
+                            "personas formadas en autocuidado frente a las vulneraciones de sus derechos",
+                    },
+                ],
+            },
+            {
+                id: "alpes",
+                titulo: "Los Alpes, Ciudad Bolívar",
+                etiquetaAccesible: "Ver cifras de Los Alpes, Ciudad Bolívar",
+                cifras: [
+                    { valor: "40", descripcion: "niños, niñas y jóvenes en procesos de formación" },
+                    { valor: "20", descripcion: "familias que acompañamos" },
+                    {
+                        valor: "60",
+                        descripcion: "personas formadas en cuidado, derechos y convivencia",
+                    },
+                ],
+            },
+        ],
     },
     metodologia: {
         contexto: "Nuestra metodología",
@@ -104,9 +135,15 @@ export const home = {
     llamados: {
         contexto: "Únete a nosotros",
         tituloSeccion: "Sé parte del cambio",
+        imagenes: [
+            { src: "/images/amigos-fukom.png", alt: "Personas sonriendo junto a la fundación" },
+            { src: "/images/carrusel/foto-2.png", alt: "Actividad de la fundación con niños" },
+            { src: "/images/carrusel/foto-3.png", alt: "Familias participando en los programas" },
+        ],
         items: [
             {
                 color: "amarillo",
+                icono: { src: "/images/llamados/amigos.svg", ancho: 80, alto: 77, cajaAncho: 120, cajaAlto: 117 },
                 titulo: "Amigos FUKOM",
                 descripcion: "Apoya mes a mes o cada año, o suma tu tiempo y talento",
                 boton: "Se un amigo FUKOM",
@@ -114,6 +151,7 @@ export const home = {
             },
             {
                 color: "azul",
+                icono: { src: "/images/llamados/apadrina.svg", ancho: 81, alto: 82, cajaAncho: 121, cajaAlto: 122 },
                 titulo: "Apadrina una historia",
                 descripcion: "Acompaña el proceso de un niño, una mamá o un adulto mayor.",
                 boton: "Apadrina",
@@ -121,6 +159,7 @@ export const home = {
             },
             {
                 color: "naranja",
+                icono: { src: "/images/llamados/aliado.svg", ancho: 79, alto: 68, cajaAncho: 119, cajaAlto: 121 },
                 titulo: "Necesitamos un aliado como tú",
                 descripcion: "Suma tu organización y ayúdanos a llegar a más niños, niñas y familias.",
                 boton: "Únete",

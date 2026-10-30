@@ -1,11 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Button from "@/components/ui/Button";
 import { home } from "@/content/home";
 
 const { fotos } = home.carrusel;
+
+const INTERVALO_MS = 5000;
 
 export default function CarruselProgramas() {
     const [indice, setIndice] = useState(0);
@@ -13,6 +15,16 @@ export default function CarruselProgramas() {
 
     const anterior = () => setIndice((i) => (i - 1 + total) % total);
     const siguiente = () => setIndice((i) => (i + 1) % total);
+
+    useEffect(() => {
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+        const temporizador = setTimeout(() => {
+            setIndice((i) => (i + 1) % total);
+        }, INTERVALO_MS);
+
+        return () => clearTimeout(temporizador);
+    }, [indice, total]);
 
     return (
         <section className="bg-primary-200 px-20 py-10">

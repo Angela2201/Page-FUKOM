@@ -29,6 +29,7 @@ export default function OlaPersonajes() {
           width={w}
           height={h}
           priority
+          unoptimized
           className="absolute object-cover"
           style={{
             left: `${(x / ANCHO) * 100}%`,
