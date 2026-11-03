@@ -35,12 +35,16 @@ export default function ContadorAnimado({ valor, duracionMs = 2000 }: Props) {
 
         const observador = new IntersectionObserver(
             ([entrada]) => {
-                cancelAnimationFrame(animacion);
+                /* cancelAnimationFrame(animacion);
 
                 if (!entrada.isIntersecting) {
                     setActual(0);
                     return;
-                }
+                } */
+
+                if (!entrada.isIntersecting) return;
+
+                observador.disconnect();
 
                 if (sinMovimiento) {
                     setActual(numero);
