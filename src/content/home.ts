@@ -83,7 +83,7 @@ export const home = {
             {
                 etapa: "capullo",
                 categoria: "Capullo",
-                titulo: "Desarollan proyectos significativos",
+                titulo: "Desarrollan proyectos significativos",
                 descripcion:
                     "Aprenden haciendo, mientras fortalecen su pensamiento crítico, sus valores y su proyecto de vida.",
             },
