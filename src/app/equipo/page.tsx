@@ -1,6 +1,7 @@
 import Hero from "@/features/equipo/Hero";
 import NuestroEquipo from "@/features/equipo/NuestroEquipo";
 import EquipoApoyo from "@/features/equipo/EquipoApoyo";
+import Voluntariado from "@/features/equipo/Voluntariado";
 
 export default function Equipo() {
   return (
@@ -8,6 +9,7 @@ export default function Equipo() {
       <Hero />
       <NuestroEquipo />
       <EquipoApoyo />
+      <Voluntariado />
     </main>
   );
 }

@@ -60,4 +60,22 @@ export const equipo = {
       { color: "rojo", valor: "5", descripcion: "Profesionales" },
     ],
   },
+  voluntariado: {
+    titulo: "Hazte grande de corazón sirviendo a otros",
+    descripcion:
+      "Si eres profesional y quieres servir con tu vocación, conocimientos y talento, súmate como Amigo Comunidad.",
+    tarjeta: {
+      texto:
+        "Si eres profesional y quieres servir con tu vocación, conocimientos y talento, súmate como Amigo Comunidad.",
+      beneficios: [
+        { icono: "estrella", texto: "Certificación de voluntariado" },
+        { icono: "corazon", texto: "Experiencia de campo en el territorio" },
+        { icono: "mariposa", texto: "Certificación de voluntariado" },
+      ],
+      boton: "Quiero ser voluntario",
+      href: "#",
+    },
+    imagen: "/images/equipo/voluntariado/foto.png",
+    etiqueta: "Las actividades son los sábados",
+  },
 } as const;
