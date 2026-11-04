@@ -48,7 +48,9 @@ export default function Header() {
           <Button
             variant="principal"
             href="/donaciones"
-            icon={<Image src="/icons/corazon.svg" alt="" width={17} height={16} />}
+            icon={
+              <Image src="/icons/corazon.svg" alt="" width={17} height={16} />
+            }
           >
             Donar
           </Button>
@@ -75,11 +77,12 @@ export default function Header() {
 
       {abierto && (
         <div
-        id="menu-principal"
-        className="absolute left-0 top-full flex w-full items-center justify-between rounded-b-24 bg-[url('/images/menu-fondo.png')] bg-cover bg-bottom px-24 py-12 shadow-[0px_2px_6px_0px_rgba(7,22,43,0.27)]">
+          id="menu-principal"
+          className="absolute left-0 top-full flex w-full items-center justify-between rounded-b-24 bg-[url('/images/menu-fondo.png')] bg-cover bg-bottom px-24 py-12 shadow-[0px_2px_6px_0px_rgba(7,22,43,0.27)]"
+        >
           <div className="absolute inset-0 rounded-b-24 bg-primary-100/15" />
-            <MenuNavegacion alNavegar={() => setAbierto(false)} />
-            <TarjetaDonar alNavegar={() => setAbierto(false)} />
+          <MenuNavegacion alNavegar={() => setAbierto(false)} />
+          <TarjetaDonar alNavegar={() => setAbierto(false)} />
         </div>
       )}
     </header>

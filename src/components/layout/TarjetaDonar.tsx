@@ -23,7 +23,8 @@ export default function TarjetaDonar({ alNavegar }: TarjetaDonarProps) {
       </p>
 
       <p className="text-center text-base/5 text-neutral-1000">
-        Cada donación se convierte en educación, herramientas y oportunidadesreales para nuestra comunidad
+        Cada donación se convierte en educación, herramientas y
+        oportunidadesreales para nuestra comunidad
       </p>
 
       <Button

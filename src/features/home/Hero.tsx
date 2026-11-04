@@ -41,7 +41,12 @@ export default function Hero() {
               href={accion.href}
               icon={
                 accion.variante === "principal" ? (
-                  <Image src="/icons/corazon.svg" alt="" width={17} height={16} />
+                  <Image
+                    src="/icons/corazon.svg"
+                    alt=""
+                    width={17}
+                    height={16}
+                  />
                 ) : undefined
               }
             >

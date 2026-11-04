@@ -12,7 +12,7 @@ export interface AliadoPayload {
   mensaje?: string;
 }
 
-export type UneteTipo = 'grupo-ff-profesionales' | 'perfiles-a-apadrinar';
+export type UneteTipo = "grupo-ff-profesionales" | "perfiles-a-apadrinar";
 
 export interface UnetePayload {
   tipo: UneteTipo;

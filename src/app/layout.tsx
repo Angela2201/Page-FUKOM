@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { Quicksand } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -23,9 +24,14 @@ export const metadata: Metadata = {
   title: "FUKOM",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: Readonly<{ children: ReactNode }>) {
   return (
-    <html lang="es" className={`${quicksand.variable} ${junegull.variable} h-full antialiased`}>
+    <html
+      lang="es"
+      className={`${quicksand.variable} ${junegull.variable} h-full antialiased`}
+    >
       <body className="min-h-full flex flex-col">
         <Header />
         {children}
