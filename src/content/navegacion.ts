@@ -20,7 +20,7 @@ export const columnasMenu: SeccionMenu[][] = [
       anchoIcono: 43,
       color: "text-yellow-200",
       enlaces: [
-        { texto: "Nuestra historia", href: "#" },
+        { texto: "Nuestra historia", href: "/quienes-somos" },
         { texto: "Valores, visión y misión", href: "#" },
         { texto: "Equipo", href: "#" },
         { texto: "Aliados estratégicos", href: "#" },
