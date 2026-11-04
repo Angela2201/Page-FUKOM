@@ -6,31 +6,42 @@ export const equipo = {
   },
   nuestroEquipo: {
     titulo: "Nuestro equipo",
+    cerrar: "Cerrar",
     miembros: [
       {
         nombre: "Karen Lizeth Moreno",
         cargo: "Fundadora, Directora general y estratégica",
         foto: "/images/equipo/miembro-placeholder.png",
+        biografia:
+          "Lidera procesos de transformación educativa, desarrollo integral y construcción de oportunidades para niños, niñas, jóvenes y familias. Su experiencia: fundadora, educadora, líder social, diseñadora de metodologías educativas y promotora de procesos de transformación comunitaria. Temas: educación integral, pensamiento crítico, matemáticas, STEAM, administración integral de la vida, niñez, juventud, familia, liderazgo social, desarrollo comunitario y proyectos de vida.",
       },
       {
         nombre: "Rosmary Patiño Moreno",
         cargo: "Directora del programa FUKOM en la Mesa",
         foto: "/images/equipo/miembro-placeholder.png",
+        biografia:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       },
       {
         nombre: "Teresa Cavanzo",
         cargo: "Coordinadora del programa FUKOM en la Mesa",
         foto: "/images/equipo/miembro-placeholder.png",
+        biografia:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       },
       {
         nombre: "Nelly Rodriguez",
         cargo: "Coordinadora del programa FUKOM en la Mesa",
         foto: "/images/equipo/miembro-placeholder.png",
+        biografia:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       },
       {
         nombre: "Miguel Angel Cruz Cavanzo",
         cargo: "Director de proyectos de arte y relaciones Comerciales",
         foto: "/images/equipo/miembro-placeholder.png",
+        biografia:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       },
     ],
   },
