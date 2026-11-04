@@ -34,4 +34,19 @@ export const equipo = {
       },
     ],
   },
+  equipoApoyo: {
+    etiqueta: "Equipo de apoyo",
+    titulo: "Practicantes y voluntarios que suman talento",
+    descripcion:
+      "Profesores de matemáticas en formación de la Universidad Distrital, practicantes de UNIR y de la Fundación Universitaria Compensar, voluntarios y cocineras acompañan cada sábado nuestros programas.",
+    cifras: [
+      {
+        color: "verde",
+        valor: "6",
+        descripcion: "Profesores de matemáticas en formación.",
+      },
+      { color: "naranja", valor: "5", descripcion: "Voluntarios." },
+      { color: "rojo", valor: "5", descripcion: "Profesionales" },
+    ],
+  },
 } as const;
